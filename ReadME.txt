@@ -24,29 +24,20 @@ Tested successfully on the RHEL 10 (VirtualBox VM).
 
 1. Clone the repository:
 
-```bash
 git clone https://github.com/yourusername/UserManager.git
 cd UserManager
 Make the script executable:
 
-bash
-Copy
-Edit
 chmod +x user_manager.sh
 Important: Always run the script with sudo:
 
-bash
-Copy
-Edit
+
 sudo ./user_manager.sh
 🔒 Without sudo, commands like groupadd and usermod will fail with “Permission denied.”
 
 ⚙️ Usage
 On script start, you'll be prompted to choose from:
 
-sql
-Copy
-Edit
 1) Create new users and assign them a default password
 2) Assign specific users to a specific group
 3) Grant specific users sudo (wheel) privileges
@@ -73,9 +64,6 @@ Otherwise, user/group creation will fail with “Permission denied”
 
 🧪 If testing multiple times, clean up users/groups manually with:
 
-bash
-Copy
-Edit
 sudo userdel -r testuser
 sudo groupdel testgroup
 📜 License
